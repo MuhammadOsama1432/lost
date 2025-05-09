@@ -11,4 +11,4 @@ Amees kho gaya hai. Aakhri dafa **Hani Ka Dil** par dekha gaya tha, jahan umeed 
 - **Zehni Haalat:** TV ko apna guru samajhta hai. Kabhi kabhi be-had hansna shuru kar deta hai.
 - **Rabta:** [Call karo agar koi pata chale: +92 314 5850423](tel:+923145850423)
 
-![Amees' Picture](amees/amees.jpg)
+![Amees' Picture](mees.jpg)
