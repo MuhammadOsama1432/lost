@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gumshuda Shakhs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #e5e7eb;
+      font-family: sans-serif;
+    }
+
+    .creepy {
+      animation: flicker 2s infinite;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0;
+      }
+    }
+
+    .cry-effect::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 30px;
+      background: rgba(173, 216, 230, 0.5);
+      left: 50%;
+      top: 60%;
+      animation: drip 1s infinite;
+      border-radius: 50%;
+    }
+
+    @keyframes drip {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(20px); opacity: 0; }
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+
+  <!-- Crying sound -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_1670ba0ef5.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="bg-black border-red-700 border-2 p-6 rounded-2xl shadow-2xl max-w-md w-full text-left">
+    <h1 class="text-3xl text-red-600 font-bold mb-4 creepy">? Gumshuda Shakhs ?</h1>
+
+    <div class="image-container mb-4">
+      <img src="https://i.imgur.com/t1qae1V.jpg" alt="Gumshuda Shakhs" class="w-full h-auto rounded-lg border border-gray-700 shadow-lg cry-effect">
+    </div>
+
+    <p class="mb-2"><strong>Naam:</strong> Amees</p>
+    <p class="mb-2"><strong>Umar:</strong> 35</p>
+    <p class="mb-2"><strong>Aakhri Maqam:</strong> Hani ka dil (jahan umeed mar chuki thi)</p>
+    <p class="mb-2"><strong>Zehni Haalat:</strong> Dimaaghi mareez – khud se baatein karta hai, raat ko cheekhta hai</p>
+    <p class="mb-4"><strong>Rabta:</strong> +92 314 5850423</p>
+
+    <p class="text-red-500 italic creepy">Agar tum ne usay dekha hai... to shayad ab sab kuch khatam ho chuka hai.</p>
+  </div>
+
+</body>
+</html>
