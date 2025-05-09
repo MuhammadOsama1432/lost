@@ -2,74 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gumshuda Shakhs</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost Person - Amees</title>
   <style>
     body {
-      background-color: #0f0f0f;
-      color: #e5e7eb;
-      font-family: sans-serif;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+      text-align: center;
     }
-
-    .creepy {
-      animation: flicker 2s infinite;
+    h1 {
+      color: #e63946;
+      font-size: 3rem;
+      margin-top: 40px;
+      font-weight: bold;
     }
-
-    @keyframes flicker {
-      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        opacity: 1;
-      }
-      20%, 24%, 55% {
-        opacity: 0;
-      }
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
-    .cry-effect::after {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 30px;
-      background: rgba(173, 216, 230, 0.5);
-      left: 50%;
-      top: 60%;
-      animation: drip 1s infinite;
-      border-radius: 50%;
+    img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #e63946;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
-    @keyframes drip {
-      0% { transform: translateY(0); opacity: 1; }
-      100% { transform: translateY(20px); opacity: 0; }
+    .details {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      line-height: 1.5;
     }
-
-    .image-container {
-      position: relative;
+    .cta-button {
+      background-color: #e63946;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
       display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #d62c1a;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
-<body class="min-h-screen flex items-center justify-center p-6">
+<body>
 
-  <!-- Crying sound -->
-  <audio autoplay loop>
-    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_1670ba0ef5.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <h1>⚠️ Missing Person Alert: Amees ⚠️</h1>
 
-  <div class="bg-black border-red-700 border-2 p-6 rounded-2xl shadow-2xl max-w-md w-full text-left">
-    <h1 class="text-3xl text-red-600 font-bold mb-4 creepy">? Gumshuda Shakhs ?</h1>
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/amees.jpg" alt="Amees" />
 
-    <div class="image-container mb-4">
-      <img src=<img src="images/amees.jpg" alt="Amees Picture" /> class="w-full h-auto rounded-lg border border-gray-700 shadow-lg cry-effect">
+    <div class="details">
+      <p><strong>Name:</strong> Amees (Yes, that's right, *Amees*!)</p>
+      <p><strong>Age:</strong> 35 (Old enough to know better, young enough to still make bad decisions)</p>
+      <p><strong>Last Seen:</strong> At the infamous 'Hani Ka Dil' (A place where all hopes mysteriously vanish)</p>
+      <p><strong>Mental Status:</strong> Currently convinced the TV is talking directly to him. Prone to random bursts of laughter in the middle of serious conversations.</p>
+      <p><strong>Contact:</strong> +92 314 5850423 (Call at your own risk... he might answer in poetry.)</p>
     </div>
 
-    <p class="mb-2"><strong>Naam:</strong> Amees</p>
-    <p class="mb-2"><strong>Umar:</strong> 35</p>
-    <p class="mb-2"><strong>Aakhri Maqam:</strong> Hani ka dil (jahan umeed mar chuki thi)</p>
-    <p class="mb-2"><strong>Zehni Haalat:</strong> Dimaaghi mareez – khud se baatein karta hai, raat ko cheekhta hai</p>
-    <p class="mb-4"><strong>Rabta:</strong> +92 314 5850423</p>
-
-    <p class="text-red-500 italic creepy">Agar tum ne usay dekha hai... to shayad ab sab kuch khatam ho chuka hai.</p>
+    <a href="tel:+923145850423" class="cta-button">Report a Sighting</a>
   </div>
+
+  <footer>
+    <p>Warning: This person might make you laugh, but at what cost? Call if you dare... 😱</p>
+  </footer>
 
 </body>
 </html>
